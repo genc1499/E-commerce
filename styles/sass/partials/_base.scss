@@ -5,6 +5,11 @@
     margin:0 auto;
 }
 
+img{
+    display:block;
+    max-width:100%;
+}
+
 button {
     color: $primary;
     background-color: transparent;
