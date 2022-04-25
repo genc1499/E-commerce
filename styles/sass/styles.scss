@@ -1,6 +1,11 @@
+// Variable and setup partials should be the top two imported;
+// this is due to the cascading efects of CSS!!!!!!!
+
+@import "./partials/variables.scss";
 @import "./partials/setup.scss";
 @import "./partials/typography.scss";
-@import "./partials/variables.scss";
+@import "./partials/base.scss";
+
 
 // COLOURS:
 // primary text (blue): #084b6d;
@@ -11,18 +16,6 @@
 // pastel blue: #d3f0f9 
 // white: #fff; 
 
-.skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 999;
-    background: white;
-    color: black;
-  }
-  
-  .skip-link:focus {
-    left: 0;
-  }
 
 
 // HEADINGS:
