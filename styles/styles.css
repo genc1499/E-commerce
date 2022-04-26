@@ -358,6 +358,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  display: inline-block;
+}
+
 button {
   color: #084b6d;
   background-color: transparent;
@@ -602,39 +606,47 @@ footer .footerNav nav a:focus {
   background-color: #fff5f5;
 }
 
-@media only screen and (max-width: 900px) {
-  header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media only screen and (max-width: 480px) {
+  .navBar {
+    padding: 0;
   }
-
-  header .headerImgContainer {
-    width: 100%;
-  }
-
-  header .headerContent {
-    width: 100%;
-  }
-
-  header .contentContainer {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .categoryGallery .items {
-    width: 100%;
-  }
-
   .navBar .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBar .wrapper .menuIcon {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .navBar .wrapper > * {
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  .navBar .searchCart button,
+.navBar .searchCart a,
+.navBar .searchCart div {
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .navBar .searchCart .searchIcon {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    margin-bottom: 70px;
   }
 
-  .navBar .logo {
-    text-align: center;
+  header > * {
+    width: 100%;
+  }
+
+  header .contentContainer {
+    width: 80%;
   }
 }

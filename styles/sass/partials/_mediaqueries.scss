@@ -1,33 +1,49 @@
-@media only screen and (max-width:900px){
+
+@media only screen and (max-width: 480px) {
+
+    .navBar {
+        padding: 0;
+
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+    
+            .menuIcon {
+                align-self: flex-start;
+            }
+    
+            & > * {
+                margin: 0px;
+                padding: 10px 0px;
+            }
+        }
+
+        // PLSFIXTHIS: can this selector be refactored?
+        .searchCart button,
+        .searchCart a,
+        .searchCart div {
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        .searchCart .searchIcon {
+            margin-right: 0;
+        }
+    }
+
+}
+
+
+@media only screen and(max-width: 900px) {
 
     header{
-        flex-direction:column;
+        margin-bottom:70px;
     }
+   header > * {
+       width:100%;
+   }
 
-    header .headerImgContainer{
-        width:100%;
-    }
-    header .headerContent{
-        width:100%;
-    }
     header .contentContainer{
-        width:100%;
+        width:80%;
     }
-
 }
-@media only screen and (max-width:600px){
-    .categoryGallery .items{
-        width:100%;
-    }
-
-    .navBar .wrapper{
-        flex-direction:column;
-    }
-
-    .navBar .logo{
-        text-align:center;
-    }
-
-
-}
-
