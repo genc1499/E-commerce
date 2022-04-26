@@ -601,3 +601,40 @@ footer .footerNav nav a:focus {
 .categoryGallery .itemFour {
   background-color: #fff5f5;
 }
+
+@media only screen and (max-width: 900px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  header .headerImgContainer {
+    width: 100%;
+  }
+
+  header .headerContent {
+    width: 100%;
+  }
+
+  header .contentContainer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .categoryGallery .items {
+    width: 100%;
+  }
+
+  .navBar .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .navBar .logo {
+    text-align: center;
+  }
+}

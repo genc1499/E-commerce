@@ -1,0 +1,33 @@
+@media only screen and (max-width:900px){
+
+    header{
+        flex-direction:column;
+    }
+
+    header .headerImgContainer{
+        width:100%;
+    }
+    header .headerContent{
+        width:100%;
+    }
+    header .contentContainer{
+        width:100%;
+    }
+
+}
+@media only screen and (max-width:600px){
+    .categoryGallery .items{
+        width:100%;
+    }
+
+    .navBar .wrapper{
+        flex-direction:column;
+    }
+
+    .navBar .logo{
+        text-align:center;
+    }
+
+
+}
+
