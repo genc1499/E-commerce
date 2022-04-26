@@ -1,0 +1,62 @@
+.productsMain{
+    h2{
+        text-align:center;
+    }
+
+    section{
+        padding:75px 0;
+    }
+
+    ul{
+        display:flex;
+    }
+
+
+}
+
+span{
+    display:inline-block;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    
+    li{
+        flex-basis:calc((100% / 3) - 30px);
+        margin:5px 15px;
+    }
+    img{
+        border-radius:5%;
+    }
+    .popularProduct{
+        font-weight:bold;
+    }
+
+    .discountedPrice{
+        text-decoration:line-through;
+        color:rgba($color: $primary, $alpha:.5);
+    }
+
+    span{
+        text-decoration: none;
+        color:rgba($color: $primary, $alpha:1);
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
