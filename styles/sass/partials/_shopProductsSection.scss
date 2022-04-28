@@ -44,10 +44,50 @@ span{
     }
     
 
-
-
 }
 
+.guarantees{
+    position:relative;
+    background-color: $quaternary;
+     h3{
+         font-size:.6rem;
+         margin:0;
+     }
+
+     h2{
+         font-size: .8rem;
+         
+     }
+
+     p{
+         font-size:.5rem;
+     }
+ 
+    &::before{
+        content:"";
+        background-color: $quaternary;
+        background-image: url("../assets/wave-3.svg");
+        position:absolute;
+        height:3rem;
+        left:0;
+        right:0;
+        background-position: top center;
+        background-size:1500px 60px;
+        background-repeat:repeat-x;
+        top:-60px;
+    }
+    ul{
+        display:flex;
+        
+        li{
+            margin:0 20px;
+            width:calc(25% - 40px);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+    }
+}
 
 
 
